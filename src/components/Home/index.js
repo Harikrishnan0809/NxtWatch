@@ -180,7 +180,7 @@ class Home extends Component {
   renderFailureView = () => <FailureView retry={this.retry} />
 
   render() {
-    const {banner} = this.state
+    const {banner, searchInput} = this.state
     return (
       <ObjectContext.Consumer>
         {value => {
@@ -220,8 +220,9 @@ class Home extends Component {
                       <SearchInput
                         colors={theme}
                         placeholder="Search"
-                        type="text"
+                        type="search"
                         onChange={this.onChangeInput}
+                        value={searchInput}
                       />
                       <SearchButton
                         onClick={this.onSearchedVideo}

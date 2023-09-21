@@ -32,7 +32,7 @@ const NotFound = () => (
               <ImageNotFound src={imageUrl} alt="not found" />
               <HeadingNot colors={textClr}>Page Not Found</HeadingNot>
               <ParaNot>
-                We are sorry, the page you requested could not be found.
+                we are sorry, the page you requested could not be found.
               </ParaNot>
             </NotFoundContent>
           </NotFoundContentContainer>

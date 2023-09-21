@@ -140,7 +140,7 @@ const NavBar = props => (
                 {close => (
                   <LogOutPopupContainer themes={theme}>
                     <LogOutMessage themes={theme}>
-                      Are you sure you want to logout?
+                      Are you sure, you want to logout
                     </LogOutMessage>
                     <ContainerButton>
                       <CancelOrConfirmButton

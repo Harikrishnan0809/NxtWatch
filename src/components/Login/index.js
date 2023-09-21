@@ -85,7 +85,7 @@ class Login extends Component {
           return (
             <LoginBgContainer colors={theme}>
               <LoginContainer colors={theme} onSubmit={this.onSubmitDetails}>
-                <LogoImage src={logoImage} alt="logo" />
+                <LogoImage src={logoImage} alt="website logo" />
                 <InputContainer>
                   <Label colors={theme} htmlFor="username">
                     Username
