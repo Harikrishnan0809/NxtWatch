@@ -120,10 +120,6 @@ export const ProfileImage = styled.img`
   width: 23px;
   margin-left: 10px;
   margin-right: 10px;
-  display: none;
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
 `
 
 export const LgPopupContainer = styled.div`

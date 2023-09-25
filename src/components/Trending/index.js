@@ -70,7 +70,7 @@ class Trending extends Component {
 
   renderSuccessView = () => {
     const {trendingData} = this.state
-
+    console.log(trendingData)
     return (
       <CartTrendingContainer>
         {trendingData.map(each => (
