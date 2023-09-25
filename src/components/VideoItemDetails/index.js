@@ -22,7 +22,6 @@ import {
   ParaView,
   LikeDisLikeSaveContainer,
   LDSContainer,
-  ButtonLDS,
   HrLine,
   ProfileContainer,
   ImageProfile,
@@ -139,18 +138,15 @@ class VideoItemDetails extends Component {
 
               <LikeDisLikeSaveContainer>
                 <LDSContainer colors={likeClr} onClick={this.onLike}>
-                  <BiLike size={20} />
-                  <ButtonLDS colors={likeClr}>Like</ButtonLDS>
+                  <BiLike size={20} /> Like
                 </LDSContainer>
 
                 <LDSContainer colors={dislikeClr} onClick={this.onDisLike}>
-                  <BiDislike size={20} />
-                  <ButtonLDS>Dislike</ButtonLDS>
+                  <BiDislike size={20} /> Dislike
                 </LDSContainer>
 
                 <LDSContainer colors={saveClr} onClick={onSave}>
-                  <MdPlaylistAdd size={20} />
-                  <ButtonLDS>{saveTxt}</ButtonLDS>
+                  <MdPlaylistAdd size={20} /> {saveTxt}
                 </LDSContainer>
               </LikeDisLikeSaveContainer>
             </ViewsAndLikesContainer>

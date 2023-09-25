@@ -1,6 +1,6 @@
 import './App.css'
 import {Component} from 'react'
-import {Route, Switch} from 'react-router-dom'
+import {Route, Switch, Redirect} from 'react-router-dom'
 import ObjectContext from './context/objectContext'
 import Login from './components/Login'
 import ProtectedRoute from './components/ProtectedRoute/protectedComponent'
@@ -51,8 +51,8 @@ class App extends Component {
           saveList: videoList,
         }}
       >
-        <Route exact path="/login" component={Login} />
         <Switch>
+          <Route exact path="/login" component={Login} />
           <ProtectedRoute exact path="/" component={Home} />
           <ProtectedRoute exact path="/trending" component={Trending} />
           <ProtectedRoute exact path="/gaming" component={Gaming} />
@@ -62,7 +62,8 @@ class App extends Component {
             component={VideoItemDetails}
           />
           <ProtectedRoute exact path="/saved-videos" component={SavedVideos} />
-          <ProtectedRoute component={NotFound} />
+          <Route path="/not-found" component={NotFound} />
+          <Redirect to="not-found" />
         </Switch>
       </ObjectContext.Provider>
     )

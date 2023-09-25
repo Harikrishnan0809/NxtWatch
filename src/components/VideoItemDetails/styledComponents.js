@@ -72,8 +72,6 @@ export const LDSContainer = styled.button`
   color: ${props => props.colors};
 `
 
-export const ButtonLDS = styled.span``
-
 export const HrLine = styled.hr`
   width: 100%;
   margin-top: 20px;
